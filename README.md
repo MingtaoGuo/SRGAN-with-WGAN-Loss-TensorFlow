@@ -7,8 +7,26 @@ This code mainly address the problem of super resolution, [Super Resolution Gene
 2. The network architecture, Because of our poor device, in generator, we just use 5 residual block, and in discriminator, we use the standard DCGAN's discriminator.
 3. The training set, device problem again,:cry: we just use a part of ImageNet ([ImageNet Val](http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_val.tar)) which just contains 50,000 images.
 
-![](http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_val.tar)
+![](![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/networks.jpg))
 
+## How to use 
+1. Download the dataset [ImageNet Val](http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_val.tar)
+2. unzip dataset and put it into the folder 'ImageNet'
+```
+├── test
+├── save_para
+├── results
+├── vgg_para
+├── ImageNet
+     ├── ILSVRC2012_val_00000001.JPEG
+     ├── ILSVRC2012_val_00000002.JPEG
+     ├── ILSVRC2012_val_00000003.JPEG
+     ├── ILSVRC2012_val_00000004.JPEG
+     ├── ILSVRC2012_val_00000005.JPEG
+     ├── ILSVRC2012_val_00000006.JPEG
+     ...
+```
+3. execute the file main.py
 ## Results
 #### Train procedure WGAN Loss
 ![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/wganloss.jpg)
