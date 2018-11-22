@@ -27,6 +27,12 @@ This code mainly address the problem of super resolution, [Super Resolution Gene
      ...
 ```
 3. execute the file main.py
+## Requirements
+- python3.5
+- tensorflow1.4.0
+- pillow
+- numpy
+- scipy
 ## Results
 #### Train procedure WGAN Loss
 ![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/wganloss.jpg)
