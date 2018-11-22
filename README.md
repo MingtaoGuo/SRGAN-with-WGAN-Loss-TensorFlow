@@ -6,7 +6,7 @@ SRGAN with WGAN loss function in TensorFlow
 #### Train procedure WGAN Loss
 ![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/wganloss.jpg)
 
-|Down sampled|Bicubic|SRGAN|
+|Down sampled (x4)|Bicubic|SRGAN|
 |-|-|-|
 |![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/down1.jpg)|![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/bicubic1.jpg)|![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/sr1.jpg)|
 |![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/down2.jpg)|![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/bicubic2.jpg)|![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/sr2.jpg)|
