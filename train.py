@@ -34,12 +34,12 @@ def test(downsampled_img, img, B):
     saver = tf.train.Saver()
     saver.restore(sess, "./save_para/.\\model.ckpt")
     SR_img = sess.run(SR, feed_dict={downsampled: downsampled_img/127.5 - 1, train_phase: False})
-    Image.fromarray(np.uint8((SR_img[0, :, :, :] + 1)*127.5)).save("C://Users//gmt//Desktop//test//sr.jpg")
-    Image.fromarray(np.uint8((downsampled_img[0, :, :, :]))).save("C://Users//gmt//Desktop//test//down.jpg")
+    Image.fromarray(np.uint8((SR_img[0, :, :, :] + 1)*127.5)).show()
+    Image.fromarray(np.uint8((downsampled_img[0, :, :, :]))).show()
     h = img.shape[0]
     w = img.shape[1]
     bic_img = misc.imresize(downsampled_img[0, :, :, :], [h, w])
-    Image.fromarray(np.uint8((bic_img))).save("C://Users//gmt//Desktop//test//bicubic.jpg")
+    Image.fromarray(np.uint8((bic_img))).show()
     SR_img = misc.imresize(SR_img[0, :, :, :], [h, w])
     p = psnr(img, SR_img)
     s = ssim(img, SR_img, multichannel=True)
