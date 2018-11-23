@@ -2,10 +2,11 @@
 SRGAN with WGAN loss function in TensorFlow
 ## Introduction
 This code mainly address the problem of super resolution, [Super Resolution Generative Adversarial Networks](http://openaccess.thecvf.com/content_cvpr_2017/papers/Ledig_Photo-Realistic_Single_Image_CVPR_2017_paper.pdf)
-#### There are some places different from the paper:
+#### There are four different from the paper:
 1. The loss function, we use WGAN loss, instead of standard GAN loss.
 2. The network architecture, Because of our poor device, in generator, we just use 5 residual block (paper: 16), and in discriminator, we use the standard DCGAN's discriminator.
 3. The training set, device problem again,:cry: we just use a part of ImageNet ([ImageNet Val](http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_val.tar)) which just contains 50,000 images.
+4. The max iteration, we just train the model about 100,000 iterations, instead the paper 600,000.
 
 ![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/networks.jpg)
 
