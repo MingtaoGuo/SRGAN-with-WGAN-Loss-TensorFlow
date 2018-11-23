@@ -34,6 +34,7 @@ This code mainly address the problem of super resolution, [Super Resolution Gene
 - pillow
 - numpy
 - scipy
+- skimage
 ## Results
 #### Train procedure WGAN Loss
 ![](https://github.com/MingtaoGuo/SRGAN-with-WGAN-Loss-TensorFlow/blob/master/IMAGES/wganloss.jpg)
