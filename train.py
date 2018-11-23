@@ -95,18 +95,3 @@ def train(batch_size=4, lambd=1e-3, init_lr=1e-4, clip_v=0.05, B=16, max_itr=100
         if itr % 5000 == 0:
             saver.save(sess, path_save_model+"model.ckpt")
 
-
-
-
-
-
-
-if __name__ == "__main__":
-    # train()
-    img = np.array(Image.open("C://Users//gmt//Desktop//24.jpg"))
-    h = img.shape[0] // 4
-    w = img.shape[1] // 4
-    down = misc.imresize(img, [h, w])
-    test(down, img)
-    # up_scale(np.array(img))
-    pass
